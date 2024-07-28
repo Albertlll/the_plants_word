@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;}
+
+:root{
+    --main-color : #49f281;
+}
+.navbar{
+    position: fixed;
+    font-size: 25px;
+    display: flex;
+    height: 75px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+.common_plants{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.plants_grid{
+    /* height: 100%; */
+    /* width: 100%; */
+
+    gap: 30px;
+    /* border-color: transparent; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: auto;
+    right: auto;
+    
+}
+
+li{
+    display: inline-block;
+
+}
+.card_img{
+    border-radius: 50px;
+    border: 1px solid transparent;
+
+    height: 300px;
+    width: 300px;
+    /* background-color: black; */
+    /* outline: none; */
+}
+.navbar_content{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding-top: 30px;
+}
+
+.loza{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    right: 0;
+}
+
+.first_block{
+    position: absolute;
+    width: 1400px;
+    justify-content: space-between;
+    align-items: center;
+    top: calc(50% - 200px);
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.first_window{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainplant{
+    width: 500px;
+    height: auto;
+    transform: rotate(-10deg);
+
+}
+
+h1{
+    font-size: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:  var(--main-color);
+}

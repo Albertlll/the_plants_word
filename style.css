@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -46,19 +48,53 @@
     
 }
 
+
+
+
+
+.plant_card{
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.plant_card:hover{
+    transform: scale(1.1);
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_text_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 li{
     display: inline-block;
 
 }
 .card_img{
-    border-radius: 50px;
+    border-radius: 10px;
     border: 1px solid transparent;
-
-    height: 300px;
+    object-fit: cover;
+    height: 277px;
     width: 300px;
     /* background-color: black; */
     /* outline: none; */
 }
+
 .navbar_content{
     display: flex;
     justify-content: space-between;
